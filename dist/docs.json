@@ -1,0 +1,84 @@
+{
+  "api": {
+    "name": "FakeGpsDetectorPlugin",
+    "slug": "fakegpsdetectorplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "checkMockLocation",
+        "signature": "(options: CheckOptions) => Promise<CheckMockLocationResult>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "CheckOptions"
+          }
+        ],
+        "returns": "Promise<CheckMockLocationResult>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "CheckMockLocationResult",
+          "CheckOptions"
+        ],
+        "slug": "checkmocklocation"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "CheckMockLocationResult",
+      "slug": "checkmocklocationresult",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "isEnabled",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "CheckOptions",
+      "slug": "checkoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "enableHighAccuracy",
+          "tags": [
+            {
+              "text": "false",
+              "name": "default"
+            }
+          ],
+          "docs": "High accuracy mode (such as GPS, if available)\n\nOn Android 12+ devices it will be ignored if users didn't grant\nACCESS_FINE_LOCATION permissions (can be checked with location alias).",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "timeout",
+          "tags": [
+            {
+              "text": "10000",
+              "name": "default"
+            }
+          ],
+          "docs": "The maximum wait time in milliseconds for location updates.",
+          "complexTypes": [],
+          "type": "number | undefined"
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}

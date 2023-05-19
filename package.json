@@ -1,6 +1,6 @@
 {
   "name": "capacitor-plugin-fake-gps-detector",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Capacitor 5 plugin for detecting if the mock location enabled",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
